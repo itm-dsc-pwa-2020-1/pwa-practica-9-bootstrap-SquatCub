@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Pull&Bear</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+  </head>
+  <body>
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Suscrito correctamente</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-light fixed-top">
+      <a href="" ><img src="img/cart.png" alt="carrito" width="30"></a>
+      <img src="img/logo.svg" width="250" alt="logo">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav text-right" style="background-color: white;">
+          <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only"></span></a>
+          <a class="nav-item nav-link" href="#">Productos</a>
+          <a class="nav-item nav-link" href="#">Top Sale</a>
+          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">STAY HOME</a>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="d-block" style="z-index: 0;">
+        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="2000">
+              <img src="img/promo1.jpg" class="d-block w-100" alt="imagen1">
+              <div class="carousel-caption">
+                <h1 class="text-danger text-weight-bold" style="font-size:6.5em;">-50%</h1>
+                <h1 class="text-danger text-weight-bold">En articulos seleccionado</h1>
+              </div>
+
+            </div>
+            <div class="carousel-item" data-interval="2000">
+              <video src="img/vid.mp4" mz-autoplay-scroll autoplay loop width="100%" style="object-fit: cover; object-position:50% 25%;" poster="posterimage.jpg">
+              </video>
+              <div class="carousel-caption">
+                <h1 class="text-light text-weight-bold" style="font-size:6.5em;">NEW IN</h1>
+                <button class="btn btn-light" type="button" name="button">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col col-md-6 col-sm-12">
+          <img class="img-fluid" src="img/pr1.jpg" alt="pr1">
+        </div>
+        <div class="col col-md-6 col-sm-12">
+          <h1 class="display-2">SHOP</h1>
+          <h1 class="font-weight-bold" style="font-size:3.5em">HOMEWEAR</h1><br>
+          <button class="btn btn-outline-dark btn-lg">Ver más</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row row flex-column-reverse flex-md-row">
+        <div class="col col-md-6 col-sm-12 text-right">
+          <h1 class="display-2">SHOP</h1>
+          <h1 class="font-weight-bold" style="font-size:3.5em">SUDADERAS</h1><br>
+          <button class="btn btn-outline-dark btn-lg">Ver más</button>
+        </div>
+        <div class="col col-md-6 col-sm-12">
+          <img class="img-fluid" src="img/pr2.jpg" alt="pr2">
+        </div>
+      </div>
+    </div>
+
+
+    <img class="img-fluid" src="img/jf.jpg" alt="jf">
+
+
+
+
+    <br><br><br>
+    <div class="container text-center">
+      <h3 class="text-center">Seguir comprando</h3>
+      <div class="row text-center">
+        <p class="col-md-3"><u>Ver todo</u></p>
+        <p class="col-md-3"><u>Licencias</u></p>
+        <p class="col-md-3"><u>Prendas básicas</u></p>
+        <p class="col-md-3"><u>Pantalones</u></p>
+      </div>
+      <br>
+      <img src="img/NEWS.jpg" width="300" alt="news">
+      <h2>¡10% DE DESCUENTO!</h2>
+      <h2 class="font-weight-light">SUSCRÍBETE A LA NEWSLETTER</h2>
+      <p class="font-weight-light">Introduce tu e-mail</p>
+      <div class="col-sm-12">
+        <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+      </div>
+      <br>
+      <button class="btn btn-light" type="button" name="button" data-toggle="modal" data-target="#exampleModal1">Suscribirte</button>
+    </div>
+
+    <br><br>
+
+    <div class="bg-light">
+      <div class="container">
+        <div class="row bg-light">
+          <div class="col-md-3">
+            <br>
+            <h6>Servicios</h6>
+            <p>Affinity Card</p>
+            <p>Tarjeta de regalo</p>
+            <p>Arreglos</p>
+            <p>Cuidado de prendas</p>
+            <p>Nuestra App</p>
+          </div>
+          <div class="col-md-3">
+            <br>
+            <h6>Guía de Compra</h6>
+            <p>Preguntas frecuentes</p>
+            <p>Pago</p>
+            <p>Envío</p>
+            <p>Devoluciones</p>
+          </div>
+          <div class="col-md-3">
+            <br>
+            <h6>Social</h6>
+            <a><img src="img/fb.png" width="15" alt="fb"> Facebook</a><br>
+            <a><img src="img/tw.png" width="15" alt="tw"> Twitter</a><br>
+            <a><img src="img/ig.png" width="15" alt="ig"> Instagram</a><br>
+            <a><img src="img/pn.png" width="15" alt="pn"> Pinterest</a><br>
+            <a><img src="img/sf.png" width="15" alt="sf"> Spotify</a>
+          </div>
+          <div class="col-md-3">
+            <br>
+            <h6>Métodos de pago</h6>
+            <a><img src="img/visa.png" width="20" alt="visa"> Visa</a><br>
+            <a><img src="img/mc.png" width="20" alt="mc"> MasterCard</a><br>
+            <a><img src="img/am.png" width="20" alt="am"> AMEX</a><br>
+            <a><img src="img/pp.png" width="20" alt="pp"> PayPal</a><br>
+            <a><img src="img/tj.png" width="20" alt="tj"> Tarjeta de regalo</a><br>
+          </div>
+        </div>
+        <br>
+      </div>
+
+    </div>
+
+
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
